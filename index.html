@@ -3,22 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Awesome Website</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>Welcome to My Website!</h1>
-    <p>Built from scratch using HTML, CSS, and JavaScript.</p>
+    <h1>Welcome to My Portfolio</h1>
+    <nav class="nav-buttons">
+      <button class="nav-btn active" id="aboutBtn">About Me</button>
+      <button class="nav-btn" id="projectsBtn">Projects</button>
+    </nav>
   </header>
 
-  <main>
-    <section class="card">
+  <main class="container">
+
+    <section id="about-section" class="tab-content">
       <h2>About Me</h2>
-      <p>Hey! I'm learning web development. Stay tuned as I customize this page!</p>
-      <button id="magicBtn">Click for Magic ✨</button>
+      <p>
+        Hi there! I am a student developer learning HTML, CSS, and JavaScript. 
+        I don't know how to code, work with a team, and have an extreme lack of commitment.
+      </p>
+      <h3>My Hobbies & Interests</h3>
+      <ul>
+        <li>Chud Maxing</li>
+        <li>Active Job Avoidment</li>
+        <li>Living It Up 🤑🤑🤑</li>
+      </ul>
     </section>
+
+    <section id="projects-section" class="tab-content hidden">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            My very first website where I did absolutely nothing and vibe coded the whole thing, hosted on GitHub Pages built using HTML, CSS, and JS!
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Interactive Mini-Game</h3>
+          <p>
+            A fun JavaScript browser game will never be found on this website.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <script src="script.js"></script>
